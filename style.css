@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 550px;
+    width: 400px;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.3);
+}
+
+.container h1 {
+    padding: 1rem;
+    color: black;
+}
+
+.city, .state {
+    width: 100%;
+}
+
+.container label {
+    display: block;
+    color: black;
+    font-size:18px;
+    padding: 5px 15px;
+}
+
+.container  input {
+    padding:8px;
+    width: 360px;
+    margin: 10px;
+    margin-left: 20px;
+    height: 30px;
+    border: none;
+}
+
+.city input:focus,
+.state input:focus {
+    outline-color: #48a9fe;
+}
+
+#button {
+    border: none;
+    padding: 0.5rem;
+    width:100px;
+    margin-top:25px;
+    cursor: pointer;
+    background:#2d8dfd;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.3);
+}
+
+#temperature {
+    visibility: hidden;
+}
+
+#temperature div {
+    font-size: 80px;
+    display: flex;
+}
+
+#condition {
+    font-size: 30px;
+    padding: 1rem;
+}

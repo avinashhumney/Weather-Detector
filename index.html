@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Weather Reports</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Reports <i class="fa fa-bolt"></i></h1>
+        <div class="city">
+            <label id="city">City</label>
+            <input type="text" id="city-name" placeholder="Enter city">
+        </div>
+        <div class="state">
+            <label id="state">State</label>
+            <input type="text" id="state-name" placeholder="Enter state">
+        </div>
+        <button id="button">Get report</button>
+        <br><br>
+        <div id="results">
+            <div id="temperature">
+                <h2>Temperature:</h3>
+                    <div id="temp"></div>
+            </div>
+            <div id="condition"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+
+</html>
